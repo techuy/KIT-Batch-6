@@ -1,0 +1,26 @@
+C:\Users\tsuyoshi-pc\Documents\GitHub\Matrix\matrix.cpp: In function 'int check(int)':
+C:\Users\tsuyoshi-pc\Documents\GitHub\Matrix\matrix.cpp:24:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+C:\Users\tsuyoshi-pc\Documents\GitHub\Matrix\matrix.cpp: In function 'float inputmat(int, int)':
+C:\Users\tsuyoshi-pc\Documents\GitHub\Matrix\matrix.cpp:30:13: error: 'matrix' was not declared in this scope
+     cin >> &matrix [a][b];
+             ^~~~~~
+C:\Users\tsuyoshi-pc\Documents\GitHub\Matrix\matrix.cpp:30:13: note: suggested alternative: 'atoi'
+     cin >> &matrix [a][b];
+             ^~~~~~
+             atoi
+C:\Users\tsuyoshi-pc\Documents\GitHub\Matrix\matrix.cpp:33:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+C:\Users\tsuyoshi-pc\Documents\GitHub\Matrix\matrix.cpp: In function 'float showmat(int, int)':
+C:\Users\tsuyoshi-pc\Documents\GitHub\Matrix\matrix.cpp:38:14: error: 'matrix' was not declared in this scope
+     cout << &matrix[a][b] << "  ";
+              ^~~~~~
+C:\Users\tsuyoshi-pc\Documents\GitHub\Matrix\matrix.cpp:38:14: note: suggested alternative: 'atoi'
+     cout << &matrix[a][b] << "  ";
+              ^~~~~~
+              atoi
+C:\Users\tsuyoshi-pc\Documents\GitHub\Matrix\matrix.cpp:42:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^

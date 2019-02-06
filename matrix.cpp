@@ -24,20 +24,18 @@ int check(int a) {
 }
 //function for inputing value for matrix
 float inputmat(int row=0,int column=0){
-		float matrix[row][column];
 		for (int a=0;a<row;a++) {
 			for(int b=0;b<column;b++){
 				cout << "Matrix ["<< a << "][" << b << "]:  ";
-				cin >> matrix [a][b];
+				cin >> &matrix [a][b];
 			}
 		}
 	}
 //function for showing matrix
 float showmat (int row=0,int column=0){
-		float matrix [row][column];
 		for (int a=0;a<row;a++){
 			for (int b=0;b<column;b++){
-				cout << matrix[a][b] << "  ";
+				cout << &matrix[a][b] << "  ";
 			}
 			cout << endl;
 		}
@@ -53,9 +51,6 @@ float showmat (int row=0,int column=0){
 			det = matrix [0][0]*((matrix [1][1]*matrix [2][2])-(matrix [2][1]*matrix [1][2]));
 			return det;
 	}
-void methodmenu (){
-
-}
  int main (){
  	int row,column;
  	cout << "Please enter the number of row(horizontal): ";
