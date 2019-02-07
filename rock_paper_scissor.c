@@ -5,7 +5,7 @@ void computer (int num);
 int game();
 int gameover();
 int main () {
-  printf("Rock-Paper-Scissor Game\nYou basically just need to press R or P or S\n");
+  printf("Rock-Paper-Scissor Game\nYou basically just need to input R or P or S\n");
   printf("Ok!! you go first\n");
   game();
   return 0;
@@ -32,15 +32,19 @@ int game() {
   do{
     user=getchar();
     fflush(stdin);
+    printf("--------------------------------------------------------------\n");
   if (user=='r'||user=='R') {
     user = 0;
     printf("Player : Rock\n");
   }else if(user=='p'||user=='P'){
     user = 1;
     printf("Player : Paper\n");
-  }else {
+  }else if(user=='s'||user=='S'){
     user = 2;
     printf("Player : Scissor\n");
+  }else {
+    printf("You're stupid...Bye!!!");
+    return 0;
   }
   srand(time(0));
   bot = rand()%3;
@@ -51,18 +55,23 @@ int game() {
   }else if(user==0&&bot==1 || user==1&&bot==2 || user==2&&bot==0) {
     printf("You Lose!!!");
     gameover();
+  }else{
+    printf("It's a tie, Try again: ");
   }
   }while(user==bot);
 }
 int gameover() {
   int input;
-  printf("\nDo you want to try again??\n   Press 1: Try again        Press 2: Exit\n");
+  printf("\nDo you want to try again??\n   Press 1: Try again        Press 2: Exit");
   scanf("%d",&input);
   fflush(stdin);
   if (input==1) {
-    printf("You:");
+    printf("\n\n\nYou:");
     game();
-  }if (input==2){
+  }else if (input==2){
     exit(0);
+  }else {
+    printf("\nPlease give the proper input!!! -_- ");
+    gameover();
   }
 }
