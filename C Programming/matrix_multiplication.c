@@ -37,14 +37,7 @@
    int answer[3][3],temp;
    for (i=0;i<3;i++) {
      for (j=0;j<3;j++){
-       
-     }
-   }
 
-   for (i=0;i<3;i++) {
-     for(j=0;j<3;j++) {
-       printf ("%d ",answer[i][j]);
      }
-     printf("\n");
    }
- }
+// try to get make it do the multiplication
