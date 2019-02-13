@@ -1,4 +1,0 @@
-C:\Users\tsuyoshi-pc\Documents\GitHub\Matrix\matrix.c:1:10: fatal error: gtk/gtk.h: No such file or directory
- #include <gtk/gtk.h>
-          ^~~~~~~~~~~
-compilation terminated.
