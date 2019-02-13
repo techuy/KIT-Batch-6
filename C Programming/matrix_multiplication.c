@@ -35,9 +35,16 @@
 
    printf("\nAnswer:\n");
    int answer[3][3],temp;
+  for(temp=0;temp<3;temp++)
+  {
    for (i=0;i<3;i++) {
+    answer[temp][i] = 0;
      for (j=0;j<3;j++){
-
+          answer[temp][i] = answer[temp][i] + (matrix[temp][j]*matrix1[j][i]);
      }
+    printf("%d",answer[temp][i]);
    }
+   printf("\n");
+  }
+ }
 // try to get make it do the multiplication
