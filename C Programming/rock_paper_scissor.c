@@ -59,6 +59,7 @@ int game() {
     gameover();
   }else{
     printf("It's a tie, Try again: ");
+    game();
   }
   }while(user==bot);
 }
