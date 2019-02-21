@@ -38,5 +38,9 @@ void more(){
 }
 //function for saving phonenumber to a txt file
 void save() {
-
+  FILE *fptr;
+	fptr = (fopen("D:\\Internship\\Github\\C programming\\phone book\\phonebook.txt","a"));//include your txt file path
+	fprintf(fptr,"Name: %s\nPhone Number:%s\n",contact,number);
+	fprintf(fptr,"---------------------------\n");
+	fclose(fptr);
 }
