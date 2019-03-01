@@ -28,7 +28,7 @@ void more(){
   printf("Do you want to add more?\n    1. Yes       2.No\nYour choice: ");
   scanf("%d",&choice);
   fflush(stdin);
-  printf("-----------------------------------------------------------------");
+  printf("----------------------------------------------------\n");
   if (choice==1) {
     save();
     add();
@@ -38,5 +38,8 @@ void more(){
 }
 //function for saving phonenumber to a txt file
 void save() {
-
+  FILE *fptr;
+	fptr = fopen("phonebook.txt","a");//include your txt file path
+	fprintf(fptr,"Name: %s\nPhone Number:%s\n-----------------------------------------------------------------\n",contact,number);
+	fclose(fptr);
 }
