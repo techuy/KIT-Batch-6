@@ -23,14 +23,14 @@ int input()
 	printf("5. $100				6. $200\n");
 	printf("7. $500				8. $1000\n");
 	scanf("%d",&inp);
-	switch(inp)
+	if(inp>0&&inp<9)
 	{
-		case 1: case 2: case 3: case 4: case 5: case 6: case 7: case 8:
-			card();
-			break;
-		default:
+		card();
+	}
+	else 
+	{
 		printf("Wrong input. Please choose again.\n\n");
-		input();
+		input();	
 	}
 }
 int card()
