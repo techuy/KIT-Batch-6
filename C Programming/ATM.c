@@ -20,8 +20,8 @@ int input()
 	printf("Choose the amount you want to withdraw\n");
 	printf("1. $5				2. $10\n");
 	printf("3. $20				4. $50\n");
-	printf("5. $100				6. $200\n");
-	printf("7. $500				8. $1000\n");
+	printf("5. $100				6. $500\n");
+	printf("7. $1000			8. Custom\n");
 	scanf("%d",&inp);
 	if(inp>0&&inp<9)
 	{
@@ -36,6 +36,7 @@ int input()
 int card()
 {
 	char dec;
+	float with;
 	if (inp==1&&balance>=5.50)
 	{
 		printf("You have withdrawed $5 from your account.\n");
@@ -78,10 +79,12 @@ int card()
 		balance-=500.50;
 		printf("Balance: $%.2f",balance);
 	}
-	else if (inp==8&&balance>=1000.50)
+	else if (inp==8)
 	{
-		printf("You have withdrawed $1000 from your account.\n");
-		balance-=1000.50;
+		printf("The amount you want to withdraw: $");
+		scanf("%f",&with);
+		printf("You have withdrawed $%.2f from your account.\n",with);
+		balance-=with;
 		printf("Balance: $%.2f",balance);
 	}
 	else 
