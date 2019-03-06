@@ -2,6 +2,7 @@
 /*Input: amount which person want to withdraw and initial balance*/
 /*Conditions: withdraw only if amount to withdraw is multiple of 5 and for each withdrawl charges 0.50*/
 #include<stdio.h>
+#include<conio.h> // conio.h header file called for
 int card();
 int input();
 float balance;
@@ -27,10 +28,10 @@ int input()
 	{
 		card();
 	}
-	else 
+	else
 	{
 		printf("Wrong input. Please choose again.\n\n");
-		input();	
+		input();
 	}
 }
 int card()
@@ -67,16 +68,16 @@ int card()
 		balance-=100.50;
 		printf("Balance: $%.2f",balance);
 	}
-	else if (inp==6&&balance>=200.50)
-	{
-		printf("You have withdrawed $200 from your account.\n");
-		balance-=200.50;
-		printf("Balance: $%.2f",balance);
-	}
-	else if (inp==7&&balance>=500.50)
+	else if (inp==6&&balance>=500.50) // used to be 200 instead of 500 which was wrong
 	{
 		printf("You have withdrawed $500 from your account.\n");
 		balance-=500.50;
+		printf("Balance: $%.2f",balance);
+	}
+	else if (inp==7&&balance>=1000.50) // used to be 500 instead of 1000 which was wrong
+	{
+		printf("You have withdrawed $1000 from your account.\n");
+		balance-=1000.50;
 		printf("Balance: $%.2f",balance);
 	}
 	else if (inp==8)
@@ -87,7 +88,7 @@ int card()
 		balance-=with;
 		printf("Balance: $%.2f",balance);
 	}
-	else 
+	else
 	{
 		printf("Insufficient amount\n");
 		printf("Current balance: $%.2f\n",balance);
