@@ -16,6 +16,15 @@ int main(){
 
 void game(){
 	char a;
+	sqr[1]='1';
+	sqr[2]='2';
+	sqr[3]='3';
+	sqr[4]='4';
+	sqr[5]='5';
+	sqr[6]='6';
+	sqr[7]='7';
+	sqr[8]='8';
+	sqr[9]='9';
 	printf("PLay or not ? (y/n)\n");
 	scanf(" %c", &a);
 	switch (a){
@@ -85,7 +94,7 @@ void choice(){
 	}while(x==0);
 	
 	if(x == 1){
-		printf("\n%c is the winner",turn);
+		printf("\n%c is the winner \n",turn);
 		game();
 	}
 	else if(x == 2){
