@@ -4,7 +4,7 @@
 #include <math.h>
 main()
 {
-	int a,b,c=0,d,e,f,i;
+	int a,b,c=0,i;
 	
 	printf("Please enter the binary number:");
 	scanf("%d",&a);
