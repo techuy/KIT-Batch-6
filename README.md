@@ -11,7 +11,7 @@
 > We won't merge if you didn't comment in the issue you were solving.
 ### 5. If you commit, please follow the way you are supposed to name your files and folders
 > **For Folders**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*numeric-folder-name*
-**For Files**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*numeric-file-name.extension*
+> **For Files**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*numeric-file-name.extension*
 ### 6. Please think of more rules!
 > WE NEED MORE RULES!
 
