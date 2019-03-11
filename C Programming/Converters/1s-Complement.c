@@ -8,20 +8,20 @@ int main()
 	gets(binary);
 	for(i=0;binary[i]!='\0';i++)
 	{
-		if(binary[i]!='0'||binary[i]!='1')   // check the input is binary number or not
+		if((binary[i]>='a' && binary[i]<='z') || (binary[i]>='A' && binary[i]<='Z') || (binary[i]>='2' && binary[i]<='9'))
 		{
 			j++;
 		}
-		else if(binary[i]=='0')   // do the 1's complement
+		else if(binary[i]=='0')
 			binary[i]='1';
 		else if(binary[i]=='1')
 		binary[i]='0';
 	}
 	if(j>0)
 	{
-		printf("error input");  // if it's not binary it will shiw the error
+		printf("error input");
 	}
-	else // print the result
+	else
 	{
 	printf("1'S Complement: ");
 	puts(binary);
