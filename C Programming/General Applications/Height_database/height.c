@@ -19,6 +19,7 @@ int load_menu() {
   printf("Input --> ");
   scanf("%d",&choice);
   fflush(stdin);
+  if (choice == 1) {
     input();
   }else if (choice == 2) {
     show();
